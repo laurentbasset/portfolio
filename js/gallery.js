@@ -5,7 +5,7 @@ gallery.addEventListener('click',function(e){
    
     if(t.classList.contains('imgProj')){
         let par = t.parentNode;
-        toogleProject(par.parentNode)
+        toogleProject(par.parentNode);
     }
     if(t.classList.contains('titleProj')){
         toogleProject(t.parentNode);
@@ -18,7 +18,7 @@ function toogleProject(project){
         if(projects[j] != project && projects[j].classList.contains("column") ){
             closeProject(projects[j]);
         }
-   }
+}
 
 // open/close project
     if(project.classList.contains("column")){
@@ -32,6 +32,7 @@ function toogleProject(project){
     let txt = childs[5];
     img.classList.toggle('thumb');
     setTimeout(function(){ txt.classList.toggle('visible'); }, 300);
+    
 }
 
 function closeProject(project){
@@ -42,3 +43,6 @@ function closeProject(project){
     img.classList.toggle('thumb');
     setTimeout(function(){ txt.classList.toggle('visible'); }, 300); 
 }
+
+
+//location.hash = "#"+project.id;
