@@ -1,17 +1,9 @@
 @charset "UTF-8";
-/* :root { 
-    --grey: #6B6868;
-    --blue: #0046CD;
-    --pink: #EB6DA9;
-    --lightgreen: #5FE3C4;
-    --mauve: #CFA7EE;
-} */
-
 html, body {
     margin:0; 
     padding:0;
 }
-/* html { scroll-behavior: smooth; } */
+html { scroll-behavior: smooth; }
 *{
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;
