@@ -16,11 +16,13 @@ plus.addEventListener('click', function(){
 //     console.log(v);
 // });
 
-// let A = document.getElementById('A');
-// let B = document.getElementById('B');
-// A.addEventListener('mouseover', function(){
-//     console.log('A');
-// });
-// B.addEventListener('mouseover', function(){
-//     console.log('B');
-// });
+let A = document.getElementById('A');
+let B = document.getElementById('B');
+A.addEventListener('mouseover', function(){
+    A.classList.remove('active');
+    B.classList.add('active');
+});
+B.addEventListener('mouseover', function(){
+    B.classList.remove('active');
+    A.classList.add('active');
+});

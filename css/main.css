@@ -52,7 +52,10 @@ article::-webkit-scrollbar-track {
 article::-webkit-scrollbar-thumb {
     background: #5FE3C4;
 }
-
+.active{
+    opacity: 0.1;
+    transition: 0.4s;
+}
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
@@ -69,6 +72,10 @@ h1{
 h2{
     font-family: 'Roboto-Light', sans-serif;
     font-size: 4vw;
+    color: #6B6868;
+}
+h3{
+    font-family: 'Roboto-Black', sans-serif;
     color: #6B6868;
 }
 
@@ -127,18 +134,9 @@ hr.barBlue {
     padding:40px;
 }
 
-
-
-#portrait{
-    position: relative;
-    width: 33vw;
-    max-width: 300px;
-    min-width: 100px;
-}
-#portrait img {width: 100%;}
-
 #presentation {
     padding-left:30px;
+    max-width: 600px;
 }
 
 #btCv{
@@ -147,7 +145,7 @@ hr.barBlue {
     box-shadow: 1px 1px 3px black;
     cursor: pointer;
     padding: 0;
-    border: 2 white solid;
+    border: 2px white solid;
     border-radius: 0;
 }
 #btCv img {width: 100%;}
@@ -177,7 +175,7 @@ hr.barBlue {
     flex-direction: row;
     cursor:pointer;
     width: 100%;
-    margin:15px;
+    margin:15px 0px;
 }
 .column{
     flex-direction: column;
@@ -228,7 +226,10 @@ hr.barBlue {
         overflow: initial;
         max-height:none;
     }
-    #presentation{ padding:0 !important;}
+    .active{
+        opacity: 1;
+    }
+
     h1{
         font-size: 36px;
     }
@@ -236,7 +237,8 @@ hr.barBlue {
     h2{
         font-size: 24px;
     }
-
+    
+    #presentation{ padding:0 !important;}
     #Aplus{ display:block; }
     .wrap{
         max-height:30vh;
@@ -250,9 +252,6 @@ hr.barBlue {
 
 
     /* B */
-    .project{
-        margin:15px 0px;   
-    }
     .titleProj{ 
         word-break: break-all;
         font-size: 18px;
