@@ -25,7 +25,7 @@ document.addEventListener('keydown', (event) => {
     console.log(cheatCode);
 
     // launching the rainbow
-    if(cheatCode == 'rainbow') {  easterEgg = setInterval(Rainbow, 80); }
+    if(cheatCode == 'rainbow') {  easterEgg = setInterval(Rainbow, 120); }
     if (cheatCode == 'backtoclassic') { backToClassic(); }
 });
 

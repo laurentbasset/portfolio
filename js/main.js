@@ -19,14 +19,14 @@ plus.addEventListener('click', function(){
 let A = document.getElementById('A');
 let B = document.getElementById('B');
 A.addEventListener('mouseover', function(){
-    A.classList.remove('mask');
+    A.classList.remove('unactive');
     A.classList.add('active');
-    B.classList.add('mask');
+    B.classList.add('unactive');
     B.classList.remove('active');
 });
 B.addEventListener('mouseover', function(){
-    B.classList.remove('mask');
+    B.classList.remove('unactive');
     B.classList.add('active');
-    A.classList.add('mask');
+    A.classList.add('unactive');
     A.classList.remove('active');
 });
