@@ -9,6 +9,7 @@
     <!-- script -->
     <script src="js/main.js" async=""></script>
     <script src="js/gallery.js" async=""></script>
+    <script src="js/rainbow.js" async=""></script>
 
     <!-- styles CSS -->
     <link  href="css/fonts.css" rel="stylesheet">
@@ -30,19 +31,16 @@
             </p>
             
             <hr class="barGreen">
-            <p>
-            HTML, PHP, MySQL, 
-            Javascript, CSS, jQuery, 
-            responsive design, Bootstrap, Symphony.
-            installation de CMS variés ...</p>
-            <p>
-            Photoshop, Illustrator, 
-            InDesign, Dreamweaver, Figma
-            </p>
-            <p>
-            Final Cut , DVD Studio Pro
-            </p>
+            <p class="blackTxt">Compétences</p>
+            <div id="skills">
+                <a href="https://fr.wikipedia.org/wiki/HTML5" target="skills" title="html5"><img src="img/logo_HTML5.svg" alt="html5" ></a> <img src="img/logo_css3.svg"  > <img src="img/logo-javascript.svg" > <img src="img/logo_bootstrap.svg" > <img src="img/logo_jquery.svg" ><br>
+                <img src="img/logo_php.svg" > <img src="img/logo_MySQL.svg" > <img src="img/logo_laravel.svg" > <img src="img/logo_symphony.svg" > <br>
+                <img src="img/logo_wordpress.svg" > <img src="img/logo_drupal.svg" >  <img src="img/logo_cmssimple.png" > <img src="img/logo_hotglue.me.png" > <img src="img/logo_joomla.svg" > <br>
+                <img src="img/logo_photoshop.svg" > <img src="img/logo_illustrator.svg" > <img src="img/logo_indesgn.svg" > <img src="img/logo_dreamweaver.svg" > <img src="img/logo_premiere.svg"><br>
+                <img src="img/logo_gimp.svg" > <img src="img/logo_inkskape.svg" > <img src="img/logo_figma.svg" > <img src="img/logo_git.svg">
+            </div>
             <hr  class="barMauve">
+            <p class="blackTxt">Curiculum vitae</p>
             <p>
             <button onclick="window.open('./docs/cv_BassetLaurent_2021.pdf', 'cv');" id="btCv"><img src="./img/cv_thumb.JPG" alt="télécharger le cv"></button>
             </p>
@@ -67,8 +65,9 @@
                 <div class="project" id="projet9">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_projet04.jpg" alt="javascript"></div>
                     <div class="titleProj">Javascript, localstorage</div>
-                    <div class="txtProj">Réalisation d'un sélecteur aléatoire pour un ordre de passage à partir d'une liste de personnes définis, en javascript<br><br>
-                        Une utilisation du localstorage permet de faire fonctionner localement cette petite application.
+                    <div class="txtProj">
+                        <p>Réalisation d'un sélecteur aléatoire pour un ordre de passage à partir d'une liste de personnes définis, en javascript<br><br>
+                        Une utilisation du localstorage permet de faire fonctionner localement cette petite application.</p>
                     <p><a href="https://laurentb902.promo-93.codeur.online/roulette" target="projets" title="accéder au site">voir la page</a></p>
                     </div>
                 </div>
@@ -76,7 +75,8 @@
                 <div class="project" id="projet8">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_projet03.jpg" alt="intégration"></div>
                     <div class="titleProj">Intégration sans framework</div>
-                    <div class="txtProj">Il s'agissait dans ce projet d'integrer une maquette de site complexe par équipe de 3 personnes sans utiliser le framework Bootsrap.<br><br>
+                    <div class="txtProj">
+                        <p>Il s'agissait dans ce projet d'intégrer une maquette de site complexe en équipe de 3 personnes sans utiliser le framework Bootsrap.</p>
                     <p><a href="https://laurentb902.promo-93.codeur.online/lecreditledonien/" target="projets" title="accéder au site">voir la page</a></p>
                     </div>
                 </div>
@@ -84,16 +84,16 @@
                 <div class="project" id="projet7">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_projet02.jpg" alt="intégration"></div>
                     <div class="titleProj">Utilisation de Git et Github</div>
-                    <div class="txtProj">Intégration en équipe de 2 personnes d'une maquette en utlisant un repertoire Git pour organiser le travail en équipe<br><br>
-                        
+                    <div class="txtProj"><p>Intégration en équipe de 2 personnes d'une maquette en utlisant un repertoire Git pour organiser le travail en équipe</p>
                     </div>
                 </div>
 
                 <div class="project" id="projet6">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_projet01.jpg" alt="maquette"></div>
                     <div class="titleProj">Réalistation d'une maquette avec Figma</div>
-                    <div class="txtProj">Réalisation d'une maquette du site inernet du restaurant 'La Tour de Pize'<br><br>
-                    Il s'agissait dans un premier temps de réalisé un wireframe correspondant au cahier des charge, et ensuite de faire une proposition graphique mobile et desktop de la maquette, en donnant des instructions précises pour l'intégrateur.
+                    <div class="txtProj">
+                        <p>Réalisation d'une maquette du site inernet du restaurant 'La Tour de Pize'<br><br>
+                    Il s'agissait dans un premier temps de réalisé un wireframe correspondant au cahier des charge, et ensuite de faire une proposition graphique mobile et desktop de la maquette, en donnant des instructions précises pour l'intégrateur.</p>
                     <!-- <p><a href="./docs/maquette_mobile.pdf" target="projets" title="accéder au site">version mobile (pdf)</a></p> 
                     <p><a href="./docs/maquette-desktop.pdf" target="projets" title="accéder au site">version desktop (pdf)</a></p>   -->
                     </div>
@@ -102,7 +102,7 @@
                 <div class="project" id="projet5">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_projet00.jpg" alt="intégration"></div>
                     <div class="titleProj">Intégration avec Bootstraap</div>
-                    <div class="txtProj">Utilisation du framework Bootstrap pour l'intégration responsive d'une maquette réalisée avec Figma<br><br>
+                    <div class="txtProj"><p>Utilisation du framework Bootstrap pour l'intégration responsive d'une maquette réalisée avec Figma</p>
                     <p><a href="https://laurentb902.promo-93.codeur.online/projet00_MTN/" target="projets" title="accéder au site">voir la page</a></p>
                     </div>
                 </div>
@@ -113,8 +113,8 @@
                 <div class="project" id="projet4">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_DecorSurPorcelaine.jpg" alt="Décor-porcelaine"></div>
                     <div class="titleProj">www.decor-porcelaine.com</div>
-                    <div class="txtProj">Refonte du site de Blandine Basset, décoratrice sur porcelaine professionnelle.<br><br>
-                        Ce site réalisé en design responsive comporte une administration complète utilisant la methode Ajax, ainsi que des fonctions jQuery pour faciliter l'administration de celui-ci.
+                    <div class="txtProj"><p>Refonte du site de Blandine Basset, décoratrice sur porcelaine professionnelle.<br><br>
+                        Ce site réalisé en design responsive comporte une administration complète utilisant la methode Ajax, ainsi que des fonctions jQuery pour faciliter l'administration de celui-ci.</p>
                     <p><a href="http://www.decor-porcelaine.com" target="decor-porcelaine" title="accéder au site">www.decor-porcelaine.com</a></p>
                     </div>
                 </div>
@@ -123,8 +123,8 @@
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_MinotGormezano.jpg" alt="Minot-Gormezano"></div>
                     <div class="titleProj">www.minot-gormezano.com</div>
                     <div class="txtProj">
-                        Refonte du site internet des artistes Pierre Minot et Gilbert Gormezano<br><br>
-                        Pour ce projet j'ai dévellopé une galerie d'images entièrement administrable par un backoffice en ligne.
+                        <p>Refonte du site internet des artistes Pierre Minot et Gilbert Gormezano<br><br>
+                        Pour ce projet j'ai dévellopé une galerie d'images entièrement administrable par un backoffice en ligne.</p>
 
                         <p><a href="http://www.minot-gormezano.com" target="minotgormezano" title="accéder au site">www.minot-gormezano.com</a></p>
                     </div>
@@ -133,18 +133,20 @@
                 <div class="project" id="projet2">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_azertyuiop.jpg" alt="azertyuiop"></div>
                     <div class="titleProj">azertyuiopqsdfghjklmwxcvbn.org</div>
-                    <div class="txtProj">Création du site de l'artiste Jérome Fino.<br><br>
+                    <div class="txtProj">
+                    <p>Création du site de l'artiste Jérome Fino.<br><br>
                     Ce site à la particularité d'être administrable par envoi d' email.
-                    Pour créer un article il suffit d'envoyer un mail à une adresse mail spécifique et le site ce charge grace à la fonction mail() de php de transformer le mail en un nouvel article.<br>
+                    Pour créer un article il suffit d'envoyer un mail à une adresse mail spécifique et le site ce charge grace à la fonction mail() de php de transformer le mail en un nouvel article.</p>
                     <p><a href="http://azertyuiopqsdfghjklmwxcvbn.org" target="azerty" title="accéder au site">azertyuiopqsdfghjklmwxcvbn.org</a></p>
                     </div>
                 </div>
                 <div class="project" id="projet1">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_lolalilo.jpg" alt="lolalilo"></div>
                     <div class="titleProj">www.lolalilo.com</div>
-                    <div class="txtProj">Site internet personnel de créations net-art et de présentations de projets artistiques.<br>
+                    <div class="txtProj">
+                    <p>Site internet personnel de créations net-art et de présentations de projets artistiques.<br>
                     Ce site est en stand by à l'heure actuelle et ne presente plus mes projets artistiques pour le moment<br><br>
-                    Vous pouvez tout de même consultez un exemple de réalistation.
+                    Vous pouvez tout de même consultez un exemple de réalistation.</p>
                     <p><a href="http://www.lolalilo.com/here/here1.php" target="lolalilo" title="accéder au site">www.lolalilo.com</a></p>
                     </div>
                 </div>
