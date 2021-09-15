@@ -100,26 +100,15 @@ h3{
     letter-spacing: 3px;
 }
 
-hr.barMauve {
+hr{ 
     border: 0; 
     height: 1px; 
-    background-image: linear-gradient(to right, #CFA7EE, #CFA7EE00, #CFA7EE00 )
+    margin: 35px 0px;
 }
-hr.barGreen {
-    border: 0; 
-    height: 1px; 
-    background-image: linear-gradient(to right, #5FE3C4, #5FE3C400, #5FE3C400 )
-}
-hr.barPink {
-    border: 0; 
-    height: 1px; 
-    background-image: linear-gradient(to right, #EB6DA9, #EB6DA900, #EB6DA900 )
-}
-hr.barBlue {
-    border: 0; 
-    height: 1px; 
-    background-image: linear-gradient(to right, #0046CD, #0046CD00, #0046CD00 )
-}
+hr.barMauve { background-image: linear-gradient(to right, #CFA7EE, #CFA7EE00, #CFA7EE00 ) }
+hr.barGreen { background-image: linear-gradient(to right, #5FE3C4, #5FE3C400, #5FE3C400 ) }
+hr.barPink { background-image: linear-gradient(to right, #EB6DA9, #EB6DA900, #EB6DA900 ) }
+hr.barBlue { background-image: linear-gradient(to right, #0046CD, #0046CD00, #0046CD00 ) }
 
 /* A */
 #A{ 
@@ -129,23 +118,27 @@ hr.barBlue {
 #Aplus{
     display:none;
     width: 100%;
-    height: 75px;
-    background: rgb(0,0,0);
-    background: -moz-linear-gradient(0deg, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,0) 100%);
-    background: linear-gradient(0deg, rgba(0,0,0,0.5046219171262255) 50%, rgba(0,0,0,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);   
+    
+    background: rgb(48,48,48);
+    background: -moz-linear-gradient(0deg, rgba(48,48,48,1) 9%, rgba(51,51,51,0.7959384437368697) 62%, rgba(136,134,134,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(48,48,48,1) 9%, rgba(51,51,51,0.7959384437368697) 62%, rgba(136,134,134,0) 100%);
+    background: linear-gradient(0deg, rgba(48,48,48,1) 9%, rgba(51,51,51,0.7959384437368697) 62%, rgba(136,134,134,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#303030",endColorstr="#888686",GradientType=1); 
+
     color: white;
     cursor: row-resize;
     z-index:100;
     text-align: right;
     padding:40px;
+    margin-top:-50px;
 }
 
 #wrap {
-    /* padding-left:30px; */
     padding-bottom: 30px;
     max-width: 600px;
+}
+#skills{
+    padding: 25px 0px;
 }
 
 #skills img {
@@ -239,29 +232,19 @@ hr.barBlue {
     display:none;
     font-family: 'Roboto-Light', sans-serif;
     font-size: 24px;
-    border-bottom: 1px solid #0046CD;
     padding: 0px 25px 25px 25px;
-    max-width: 450px;
-    color:black;
-    
-    overflow:visible;
-    max-height:40vh;
-    height: 0%;
-    transition: 0.8s !important;
-    transition-delay: 1s !important;
-    
-    
+    word-break: break-word;
+    border-bottom: 1px dotted black;
 }
 .visible {
     display: inline-block;
-
-    max-height:200vh;
-    height:100%;
+    max-width: 520px;
+    transition: 1s;
     
 }
 
 @media screen and (max-width: 1024px) {
-    body{ overflow: visible;}
+    body{ overflow: auto; }
     main{
         display:flex;
         flex-direction: column;
@@ -293,22 +276,22 @@ hr.barBlue {
 
     #Aplus{ display:block; }
     .wrap{
-        overflow:visible;
-        max-height:40vh;
+        overflow:hidden;
+        max-height:calc(50vh - 80px);
         height: 0%;
         transition: 0.8s;
         padding:0 !important;
      }
      .full {
-         max-height:200vh;
+         max-height:1000vh;
          height:100%;
      }
 
      #skills img {
-        min-width: 12vmin;
+        min-width: 10vmin;
         max-width: 24vmin;
-        max-height: 12vmin;
-        margin:0px 12px 12px 0px;
+        max-height: 10vmin;
+        margin:0px 1em 1em 0px;
     }
 
 
