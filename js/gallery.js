@@ -1,5 +1,6 @@
 let gallery = document.querySelector('#gallery');
 let projects = gallery.getElementsByClassName('project');
+
 gallery.addEventListener('click',function(e){
     let t = e.target;
    
