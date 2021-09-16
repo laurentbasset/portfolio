@@ -20,11 +20,11 @@ body{
     overflow: hidden;
 }
 
-a:link, a:visited, a:active{
+a:link, a:active{
     text-decoration: none;
     color: ivory;
 }
-a:hover {
+a:hover, a:visited {
     text-decoration: none;
     color: #CFA7EE;
 }
@@ -133,16 +133,11 @@ hr.barBlue { background-image: linear-gradient(to right, #0046CD, #0046CD00, #00
     margin-top:-50px;
 }
 
-#wrap {
-    padding-bottom: 30px;
-    /* max-width: 500px; */
-}
+#wrap { padding-bottom: 30px; }
 
 #cv{
-    /* width: 100%;
-    /*height: calc(attr(width) * 1.6);*/
-    /* height: attr(width);
-    min-height: 300px; */ 
+    width: 100%;
+    height: 135%;
 }
 #skills{
     padding: 25px 0px;
@@ -160,20 +155,10 @@ hr.barBlue { background-image: linear-gradient(to right, #0046CD, #0046CD00, #00
     cursor: help;
     transition: 0.3s;  
 }
+
 #skills img:hover { 
     background-color: rgb(204, 204, 204);
 }
-
-#btCv{
-    position: relative;
-    min-width: 150px;
-    box-shadow: 1px 1px 3px black;
-    cursor: pointer;
-    padding: 0;
-    border: 2px white solid;
-    border-radius: 0;
-}
-#btCv img {width: 100%;}
 
 /* B */
 #B{
@@ -308,7 +293,7 @@ hr.barBlue { background-image: linear-gradient(to right, #0046CD, #0046CD00, #00
         margin-top: 20px;
     }
     .project{
-        margin: 15px 0px;
+        margin: 25px 0px;
     }
     .titleProj{ 
         font-size: 18px;
