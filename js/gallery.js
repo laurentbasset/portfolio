@@ -27,11 +27,13 @@ function toogleProject(project){
     }else{
         project.classList.toggle('column');
     }
+    //location.hash = "#"+project.id;
 
     let childs = project.childNodes;
     let img = childs[1];
     let txt = childs[5];
     img.classList.toggle('thumb');
+    
     setTimeout(function(){ txt.classList.toggle('visible'); }, 300);
     
 }
