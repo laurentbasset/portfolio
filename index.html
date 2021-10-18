@@ -11,7 +11,7 @@
     <!-- script -->
     <script src="js/main.js" async=""></script>
     <script src="js/gallery.js" async=""></script>
-    <script src="js/rainbow.js" async=""></script>
+    <script src="js/rainbow.js" async=""></script> <!-- special script -->
 
     <!-- styles CSS -->
     <link  href="css/fonts.css" rel="stylesheet">
@@ -44,13 +44,26 @@
             </p>
 
             <hr class="barGreen">
-            <p class="blackTxt">Compétences</p>
+            
             <div id="skills">
-                <img src="img/logo_HTML5.svg" alt="html5" title="html5" > <img src="img/logo_css3.svg" alt="css3" title="css3" > <img src="img/logo-javascript.svg" alt="javascript" title="javascript"> <img src="img/logo_bootstrap.svg" alt="Bootstrap5" title="Bootstrap"> <img src="img/logo_jquery.svg" alt="jQuery" title="jQuery" ><br>
+                <!-- <img src="img/logo_HTML5.svg" alt="html5" title="html5" > <img src="img/logo_css3.svg" alt="css3" title="css3" > <img src="img/logo-javascript.svg" alt="javascript" title="javascript"> <img src="img/logo_bootstrap.svg" alt="Bootstrap5" title="Bootstrap"> <img src="img/logo_jquery.svg" alt="jQuery" title="jQuery" ><br>
                 <img src="img/logo_php.svg" alt="php" title="php" > <img src="img/logo_MySQL.svg" alt="MySQL" title="MySQL" > <img src="img/logo_laravel.svg" alt="Laravel" title="Laravel"> <img src="img/logo_symphony.svg" alt="Symphony" title="Symphony"> <br>
                 <img src="img/logo_wordpress.svg" alt="Wordpress" title="Wordpress"> <img src="img/logo_mediawiki.svg" alt="MediaWiki" title="MediaWiki" > <img src="img/logo_drupal.svg" alt="Drupal" title="Drupal" >  <img src="img/logo_cmssimple.png" alt="CMS Made Simple" title="CMS Made Simple" > <img src="img/logo_hotglue.me.png" alt="Hotglue" title="Hotglue" > <img src="img/logo_joomla.svg" alt="Joomla" title="Joomla"> <br>
                 <img src="img/logo_photoshop.svg" alt="Photoshop" title="Photoshop" > <img src="img/logo_illustrator.svg" alt="Illustrator" title="Illustrator" > <img src="img/logo_indesgn.svg" alt="Indesign" title="Indesign"> <img src="img/logo_dreamweaver.svg" alt="Dreamweaver" title="Dreamweaver"> <img src="img/logo_premiere.svg" alt="Premiere" title="Premiere"><br>
                 <img src="img/logo_gimp.svg" alt="Gimp" title="Gimp"> <img src="img/logo_inkskape.svg" alt="InKskape" title="Inkskape"> <img src="img/logo_figma.svg" alt="Figma" title="Figma" > <img src="img/logo_git.svg" alt="Git" title="Git">
+                 -->
+                 <p class="blackTxt">Compétences web</p>
+                 <p>
+                 html5, css3, javascript, Bootstrap5, jQuery,<br>
+                 php, MySQL, Laravel, Symphony,<br>
+                 Wordpress, MediaWiki, CMS Made Simple, Hotglue.
+                </p>
+                <p class="blackTxt">Compétences PAO</p>
+                 Photoshop, Illustrator, Indesign, Dreamweaver<br>
+                 Gimp, InKskape, Figma.
+            
+                 <p class="blackTxt">Autres compétences</p>
+                 Git, Premiere.
             </div>
         </div>
         
@@ -62,11 +75,20 @@
             <div id="gallery">
                 <hr class="barBlue">
                 <h3>Projets réalisés durant la formation</h3>
+                <div class="project" id="projet10">
+                    <div class="visu thumb"><img class="imgProj" src="./img/snapShot_projet05.jpg" alt="javascript"></div>
+                    <div class="titleProj">Utilisation d'API</div>
+                    <div class="txtProj">
+                        <p>Intégration d'une maquette qui utilise l'API de Deezer pour afficher du contenu musical.</p>
+                    <!-- <p><a href="https://laurentb902.promo-93.codeur.online/MusicBand" target="projets" title="accéder au site">voir la page</a></p> -->
+                    </div>
+                </div>
+
                 <div class="project" id="projet9">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_projet04.jpg" alt="javascript"></div>
                     <div class="titleProj">Javascript, localstorage</div>
                     <div class="txtProj">
-                        <p>Réalisation d'un sélecteur aléatoire pour un ordre de passage à partir d'une liste de personnes définis, en javascript<br><br>
+                        <p>Réalisation d'un sélecteur aléatoire pour un ordre de passage à partir d'une liste de personnes définies, en javascript<br><br>
                         Une utilisation du localstorage permet de faire fonctionner localement cette petite application.</p>
                     <p><a href="https://laurentb902.promo-93.codeur.online/roulette" target="projets" title="accéder au site">voir la page</a></p>
                     </div>
@@ -84,7 +106,9 @@
                 <div class="project" id="projet7">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_projet02.jpg" alt="intégration"></div>
                     <div class="titleProj">Utilisation de Git et Github</div>
-                    <div class="txtProj"><p>Intégration en équipe de 2 personnes d'une maquette en utlisant un repertoire Git pour organiser le travail en équipe</p>
+                    <div class="txtProj">
+                        <p>Intégration en équipe de 2 personnes d'une maquette en utlisant un répertoire Git pour organiser le travail notre travail.</p>
+                        <p><a href="https://github.com/laurentbasset/maquetteLucas" target="github" title="accéder au Github">répertoire Github</a></p>
                     </div>
                 </div>
 
@@ -92,16 +116,16 @@
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_projet01.jpg" alt="maquette"></div>
                     <div class="titleProj">Réalistation d'une maquette avec Figma</div>
                     <div class="txtProj">
-                        <p>Réalisation d'une maquette du site inernet du restaurant 'La Tour de Pize'<br><br>
-                    Il s'agissait dans un premier temps de réalisé un wireframe correspondant au cahier des charges, et ensuite de faire une proposition graphique mobile et desktop de la maquette, en donnant des instructions précises pour l'intégrateur.</p>
-                    
+                        <p>Réalisation d'une maquette du site internet du restaurant 'La Tour de Pize'<br><br>
+                    Il s'agissait dans un premier temps de réaliser un wireframe correspondant au cahier des charges, et ensuite de faire une proposition graphique mobile et desktop de la maquette, en donnant des instructions précises pour l'intégrateur.</p>
+                    <a href="https://www.figma.com/proto/m4XfqHeR5J0VrUk6MZXxvI/La-Tour-de-PiZe-un-site-penché?page-id=164%3A305&node-id=164%3A563&viewport=309%2C48%2C0.11&scaling=scale-down&starting-point-node-id=164%3A563&show-proto-sidebar=1" target="projets" title="voir le prototype" ></a>
                     </div>
                 </div>
 
                 <div class="project" id="projet5">
                     <div class="visu thumb"><img class="imgProj" src="./img/snapShot_projet00.jpg" alt="intégration"></div>
                     <div class="titleProj">Intégration avec Bootstraap</div>
-                    <div class="txtProj"><p>Utilisation du framework Bootstrap pour l'intégration responsive d'une maquette réalisée avec Figma</p>
+                    <div class="txtProj"><p>Utilisation du framework Bootstrap pour l'intégration responsive d'une maquette récupérée avec Figma</p>
                     <p><a href="https://laurentb902.promo-93.codeur.online/projet00_MTN/" target="projets" title="accéder au site">voir la page</a></p>
                     </div>
                 </div>
@@ -134,8 +158,8 @@
                     <div class="titleProj">azertyuiopqsdfghjklmwxcvbn.org</div>
                     <div class="txtProj">
                     <p>Création du site de l'artiste Jérome Fino.<br><br>
-                    Ce site à la particularité d'être administrable par envoi d' email.
-                    Pour créer un article il suffit d'envoyer un mail à une adresse email spécifique et le site ce charge de transformer l'email en un nouvel article.</p>
+                    Ce site à la particularité d'être administrable par envoi de email.
+                    Pour créer un article il suffit d'envoyer un email à une adresse spécifique et le site se charge de transformer l'email en un nouvel article.</p>
                     <p><a href="http://azertyuiopqsdfghjklmwxcvbn.org" target="azerty" title="accéder au site">azertyuiopqsdfghjklmwxcvbn.org</a></p>
                     </div>
                 </div>
@@ -144,7 +168,7 @@
                     <div class="titleProj">www.lolalilo.com</div>
                     <div class="txtProj">
                     <p>Site internet personnel de créations net-art et de présentations de projets artistiques.<br>
-                    Ce site est en stand by à l'heure actuelle et ne présente plus mes projets artistiques pour le moment<br><br>
+                    Ce site est en stand by à l'heure actuelle et ne présente plus mes projets artistiques pour le moment.<br><br>
                     Vous pouvez tout de même consulter un exemple de réalisation.</p>
                     <p><a href="http://www.lolalilo.com/here/here1.php" target="lolalilo" title="accéder au site">www.lolalilo.com</a></p>
                     </div>

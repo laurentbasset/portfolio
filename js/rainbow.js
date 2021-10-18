@@ -1,3 +1,4 @@
+////////////////  cheatcode to activate this script is 'rainbow'...
 let cheatCode = '       ';
 let colors = ['purple', 'blue', 'green', 'yellow', 'orange','red', 'violet'];
 let rainbow = new String();
